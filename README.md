@@ -1,11 +1,11 @@
 # StockPriceMicroServiceProject
 Micro Service Learning Project, built on Spring cloud using 
-  Enable common patterns with just annotations:
-  Service Discovery: Eureka
-  Circuit Breaker: Hystrix
-  Client Side Load Balancer: Ribbon
-  Declarative REST Client: Feign
-  Router and Filter: Zuul
+ 
+ 1. Service Discovery: Eureka
+ 2. Circuit Breaker: Hystrix
+ 3. Client Side Load Balancer: Ribbon
+ 4. Declarative REST Client: Feign
+ 5. Router and Filter: Zuul
 
 Took reference from Techprime.
 
