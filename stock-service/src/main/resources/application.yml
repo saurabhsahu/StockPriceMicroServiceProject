@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: stock-service
+
+server:
+  port: 8301
+
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8302/eureka/
+  instance:
+    hostname: localhost
+ 
+management:
+  endpoints:
+      web:
+        exposure:
+          include: hystrix.stream, info, health
+        base-path: /
