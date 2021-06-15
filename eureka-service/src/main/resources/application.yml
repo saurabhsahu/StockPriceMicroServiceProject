@@ -1,0 +1,47 @@
+spring:
+
+application:
+
+name: eureka-service
+
+server:
+
+port: 8302
+
+eureka:
+
+client:
+
+registerWithEureka: false
+
+fetchRegistry: true
+
+#fetchRegistry: false On the other hand, Eureka server does not need to fetch the information of the registered services (from the registry available on itself). So we have disable that feature too.
+
+server:
+
+waitTimeInMsWhenSyncEmpty: 0
+
+service-url:
+
+defaultzone: http://localhost:8302/eureka
+
+zuul:
+
+#Service will be mapped under the /api URI
+
+prefix: /api
+
+routes:
+
+db-service:
+
+path: /db-service/**
+
+#url: http://localhost:8300
+
+serviceId: DB-SERVICE stock-service:
+
+path: /stock-service/**
+
+url: http://localhost:8301
